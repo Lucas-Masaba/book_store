@@ -8,9 +8,9 @@ Welcome to my Book Store. Here, I have developed a website that can enable a use
 
 ## Built With
 
-- REACT
-- REDUX
+- REACT/REDUX
 - Javascript
+- HTML/CSS
 
 
 ## Getting Started
