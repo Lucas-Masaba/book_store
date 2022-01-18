@@ -1,18 +1,6 @@
 import React from 'react';
-// import { useDispatch } from 'react-redux';
-// import { addBook, removeBook } from '../../redux/books/books';
 import PropTypes from 'prop-types';
 import BookItem from './bookItem';
-// const dispatch = useDispatch();
-
-// const submitBookToStore = () => {
-//   const newBook = {
-//     id,
-//     title,
-//     author,
-//   };
-//   dispatch(addBook(newBook));
-// };
 
 const BookList = (props) => {
   const { books } = props;
