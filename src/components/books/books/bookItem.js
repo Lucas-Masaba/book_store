@@ -7,15 +7,15 @@ const BookItem = ({ book }) => {
   const dispatch = useDispatch();
 
   const removeBookfromStore = () => {
-    dispatch(removeBook(book.id));
+    dispatch(removeBook(book.item_id));
   };
 
   return (
-    <li key={book.id}>
+    <li key={book.item_id}>
       <span>{book.title}</span>
       <span>
         {
-        ` by ${book.author}
+        ` by ${book.category}
         `
 }
       </span>
@@ -26,9 +26,9 @@ const BookItem = ({ book }) => {
 
 BookItem.propTypes = {
   book: PropTypes.shape({
-    id: PropTypes.string.isRequired,
+    item_id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    author: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
   }).isRequired,
 };
 

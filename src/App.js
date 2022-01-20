@@ -1,13 +1,20 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import BookList from './components/books/books/bookList';
 import InputBook from './components/books/books/inputBook';
 import Categories from './components/categories/categories';
 import Navbar from './components/navbar';
+import { fetchBooks } from './components/redux/books/books';
 
 function App() {
   const books = useSelector((state) => state.books);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchBooks());
+  }, []);
+
   return (
     <Routes>
       <Route

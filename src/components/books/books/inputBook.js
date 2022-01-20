@@ -1,34 +1,43 @@
-import React, { useState } from 'react';
+import { React, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../../redux/books/books';
 
 const InputBook = () => {
-  const dispatch = useDispatch();
-
   const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
+
+  const dispatch = useDispatch();
 
   const inputTitleHandler = (e) => {
     setTitle(e.target.value);
   };
 
-  const inputAuthorHandler = (e) => {
-    setAuthor(e.target.value);
+  const inputCategoryHandler = (e) => {
+    setCategory(e.target.value);
   };
 
-  const submitBookToStore = () => {
+  const submitBookToStore = (e) => {
+    e.preventDefault();
     const newBook = {
-      id: uuidv4(),
+      item_id: uuidv4(),
       title: title.trim(),
-      author: author.trim(),
+      category: category.trim(),
     };
     dispatch(addBook(newBook));
+    setTitle('');
+    setCategory('');
   };
+
   return (
     <form>
-      <input onChange={inputTitleHandler} type="text" placeholder="title" />
-      <input onChange={inputAuthorHandler} type="text" placeholder="author" />
+      <input value={title} onChange={inputTitleHandler} type="text" placeholder="title" />
+      <input
+        value={category}
+        onChange={inputCategoryHandler}
+        type="text"
+        placeholder="category"
+      />
       <button type="button" onClick={submitBookToStore}>
         Submit
       </button>
