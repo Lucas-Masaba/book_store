@@ -2,7 +2,7 @@ import {
   deleteBookFromAPI,
   fetchBooksFromAPI,
   addBookToAPI,
-} from '../../APIhandler';
+} from '../../../API/APIhandler';
 
 // constants
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
