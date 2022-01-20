@@ -5,7 +5,7 @@ import BookList from './components/books/books/bookList';
 import InputBook from './components/books/books/inputBook';
 import Categories from './components/categories/categories';
 import Navbar from './components/navbar';
-import { fetchBooks } from './components/redux/books/books';
+import { fetchBooks } from './redux/books/books';
 
 function App() {
   const books = useSelector((state) => state.books);
