@@ -8,6 +8,9 @@ Welcome to my Book Store. Here, I have developed a website that can enable a use
 ### Here is a desktop preview
 ![screenshot](/screenshot.png)
 
+## Want To See It Live
+[Here](https://book-store-lucas-masaba.netlify.app/) is a link to the online view of my website
+
 ## Built With
 
 - REACT/REDUX
