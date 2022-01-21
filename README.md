@@ -5,14 +5,15 @@
 
 Welcome to my Book Store. Here, I have developed a website that can enable a user add and remove books as they please. 
 
+### Here is a desktop preview
+![screenshot](/screenshot.png)
 
 ## Built With
 
 - REACT/REDUX
 - Javascript
 - HTML/CSS
-
-
+- Bootstrap
 ## Getting Started
 
 
@@ -46,3 +47,6 @@ After you have copied the link, enter the command below in your terminal
 
 Give a ⭐️ if you like this project! 
 
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
