@@ -50,11 +50,15 @@ const BookItem = ({ book }) => {
                 <div className="fill" />
               </div>
 
-              <div className="inside-circle">
-                --%
-              </div>
+              <div className="inside-circle" />
 
             </div>
+            <p className="percentage">
+              70%
+            </p>
+            <p className="percentage_p">
+              Completed
+            </p>
           </div>
         </div>
         <div className="vl" />

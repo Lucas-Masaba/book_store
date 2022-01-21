@@ -180,7 +180,7 @@ form {
 
 /* progress circle */
 .circle_status {
-  margin-left: 20%;
+  margin-left: 5%;
 }
 
 .circle-wrap {
@@ -237,6 +237,33 @@ form {
   z-index: 100;
   font-weight: 700;
   font-size: 2em;
+}
+
+.percentage {
+  width: 130px;
+  height: 130px;
+  line-height: 130px;
+  text-align: center;
+  margin-top: 0;
+  margin-left: 13%;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.percentage_p {
+  width: 130px;
+  height: 130px;
+  line-height: 130px;
+  text-align: center;
+  margin-top: 3%;
+  margin-left: 14%;
+  position: absolute;
+  z-index: 100;
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #888;
 }
 
 .vl {
