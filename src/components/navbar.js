@@ -6,6 +6,7 @@ const Navbar = () => (
     <div>
       <nav className="navBar">
         <ul className="navBarUl">
+          <li key={0}><p className="heading">Bookstore CMS</p></li>
           <li key={1}>
             <NavLink className="navLink" to="/">Books </NavLink>
           </li>

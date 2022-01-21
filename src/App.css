@@ -1,5 +1,102 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+body {
+  background-color: #f5f6fa;
+}
+
+.book_container {
+  width: 100%;
+  list-style-type: none;
+  margin-left: 0%;
+  padding-left: 0%;
+}
+
+/* card body */
+.card {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  transition: 0.4s;
+}
+
+.category_p {
+  padding-left: 2%;
+  padding-right: 2%;
+  font-weight: bold;
+  color: #121212;
+}
+
+.title_p {
+  padding-left: 2%;
+  padding-right: 2%;
+  font-weight: bold;
+  font-size: 200%;
+}
+
+/* form */
+.add_book_p {
+  font-weight: bold;
+  font-size: 200%;
+  color: #888;
+}
+
+/* button */
+button {
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+}
+
+.submit_button {
+  padding: 1%;
+  width: auto;
+}
+
+.remove_button {
+  padding: 1%;
+  font-size: 105%;
+  width: 100%;
+}
+
+/* inputs */
+.title_input,
+.category_input {
+  margin: 1%;
+  width: auto;
+  padding: 1%;
+  border-radius: 4px;
+  border: solid 0.5px;
+}
+
+form {
+  margin-bottom: 5%;
+}
+
+/* navbar */
+.navContainer {
+  background-color: #fff;
+}
+
+.heading {
+  font-size: 250%;
+  font-weight: bold;
+  color: #0290ff;
+}
+
+.navBarUl {
+  list-style-type: none;
+  padding-left: 0%;
+  display: flex;
+  align-items: baseline;
+}
+
+.navBarUl > li {
+  padding: 2%;
+}
+
+.navLink {
+  text-decoration: none;
+  font-size: 115%;
+  color: #000;
 }

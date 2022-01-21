@@ -11,15 +11,12 @@ const BookItem = ({ book }) => {
   };
 
   return (
-    <li key={book.item_id}>
-      <span>{book.title}</span>
-      <span>
-        {
-        ` by ${book.category}
-        `
-}
-      </span>
-      <button type="button" onClick={removeBookfromStore}>Remove</button>
+    <li className="card" key={book.item_id}>
+      <span className="category_p">{book.category}</span>
+      <p className="title_p">{book.title}</p>
+      <div>
+        <button className="remove_button bg-primary text-white" type="button" onClick={removeBookfromStore}>Remove</button>
+      </div>
     </li>
   );
 };
