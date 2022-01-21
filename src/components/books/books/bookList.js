@@ -8,13 +8,14 @@ const BookList = (props) => {
 
     <ul className="book_container">
       {books.length === 0 && (
-      <div>No books added yet</div>
+        <div>No books added yet</div>
       )}
       {books.map((book) => (
         <BookItem key={book.item_id} book={book} />
       ))}
 
     </ul>
+
   );
 };
 

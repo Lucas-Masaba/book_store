@@ -33,28 +33,21 @@ const InputBook = () => {
   return (
     <div>
       <p className="add_book_p">ADD NEW BOOK</p>
-      <form className="container mt-5">
+      <form>
         <input
-          className="col-sm-4 title_input"
+          className="title_input"
           value={title}
           onChange={inputTitleHandler}
           type="text"
-          placeholder="title"
+          placeholder="Book title"
         />
-        {/* <input
-          className="col-sm-4 category_input"
-          value={category}
-          onChange={inputCategoryHandler}
-          type="text"
-          placeholder="category"
-        /> */}
         <select
-          className="col-sm-4 category_input"
+          className="category_input"
           value={category}
           onChange={inputCategoryHandler}
         >
           <option value="none">
-            Choose a category
+            Category
           </option>
           <option value="Action">Action</option>
           <option value="Drama">Drama</option>
@@ -66,7 +59,7 @@ const InputBook = () => {
           <option value="Comedy">Comedy</option>
         </select>
         <button
-          className=" submit_button col-sm-4 bg-primary text-white"
+          className=" submit_button bg-primary text-white"
           type="button"
           onClick={submitBookToStore}
         >
