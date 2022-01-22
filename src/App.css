@@ -211,7 +211,7 @@ form {
 
 .circle-wrap .circle .mask .fill {
   clip: rect(0, 75px, 150px, 0);
-  background-color: #9e00b1;
+  background-color: #0290ff;
 }
 
 @keyframes fill {
