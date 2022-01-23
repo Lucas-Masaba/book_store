@@ -5,7 +5,7 @@
 
 Welcome to my Book Store. Here, I have developed a website that can enable a user add and remove books as they please. 
 
-### Here is a desktop preview
+### Here is a desktop preview 👇
 ![screenshot](/screenshot.png)
 
 ## Want To See It Live
