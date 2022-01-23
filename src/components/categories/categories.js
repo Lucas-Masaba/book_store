@@ -5,7 +5,7 @@ const Categories = () => (
   <div>
     <Navbar />
     <div>
-      <p>Under construction</p>
+      <p className="construct">Under construction</p>
     </div>
   </div>
 );

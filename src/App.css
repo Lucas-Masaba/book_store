@@ -274,3 +274,11 @@ form {
   margin-left: -3px;
   top: 20%;
 }
+
+.construct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888;
+  font-size: 300%;
+}
